@@ -1,6 +1,18 @@
 services:
-  proxy:
-    image: nginx:alpine
+  webserver:
+    container_name: server-proxy
+    build: .
     ports:
       - "80:80"
       - "443:443"
+    secrets:
+      # See secrets top-level section below for more information
+      - server_certificate
+      - certificate_key
+
+secrets:
+  # The secrets here assume a letsencypt cert has been issued and is stored as follows
+  server_certificate:
+    file: /etc/letsencrypt/live/mikacc.xyz/fullchain.pem
+  certificate_key:
+    file: /etc/letsencrypt/live/mikacc.xyz/privkey.pem
