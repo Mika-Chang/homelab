@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    container_name: portfolio-site
+    #image: portfolio-site
+    build: ./Mika-Chang.github.io
+    networks:
+      - backend

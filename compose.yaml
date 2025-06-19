@@ -1,0 +1,13 @@
+include:
+  - nginx/compose.yaml
+  - portfolio/compose.yaml
+
+networks:
+  frontend:
+    name: microservices-frontend
+    driver: bridge
+  backend:
+    name: microservices-backend
+    driver: bridge
+    internal: true
+

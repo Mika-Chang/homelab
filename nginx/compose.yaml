@@ -9,6 +9,9 @@ services:
       # See secrets top-level section below for more information
       - server_certificate
       - certificate_key
+    networks:
+      - backend
+      - frontend
 
 secrets:
   # The secrets here assume a letsencypt cert has been issued and is stored as follows
