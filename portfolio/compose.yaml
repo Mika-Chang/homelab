@@ -1,7 +1,11 @@
 services:
   portfolio:
     container_name: portfolio-site
-    #image: portfolio-site
     build: ./Mika-Chang.github.io
+    develop:
+      watch:
+        - action: rebuild
+          path: ./Mika-Chang.github.io
     networks:
       - backend
+
