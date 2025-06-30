@@ -10,7 +10,8 @@ To run the services, run `docker compose up -d --build` from the parent director
 
 ## Dependencies
 - docker
-- git (optionally)
+- git
+- python
 
 ## TODO
 - Set up logging
