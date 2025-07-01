@@ -1,6 +1,6 @@
-Mika-Chang.github.io/
-portfolio/Mika-Chang.github.io/
-jellyfin/
-mc_server/
-logs/
 .venv/
+wip/
+
+remote/.venv
+remote/logs
+remote/portfolio/Mika-Chang.github.io/
